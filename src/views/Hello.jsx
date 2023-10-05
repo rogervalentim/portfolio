@@ -38,13 +38,14 @@ const Hello = () => {
         </div>
       </div>
 
+     <div className="gradient-container">
       <div className="gradient">
         <img src={CodeSnippet4} alt="code-snippet" />
         <img src={CodeSnippet1} alt="code-snippet" />
-        <div className="green" />
         <img src={CodeSnippet2} alt="code-snippet" />
         <img src={CodeSnippet3} alt="code-snippet" />
         <img src={CodeSnippet5} alt="code-snippet" />
+      </div>
       </div>
     </section>
     </>
