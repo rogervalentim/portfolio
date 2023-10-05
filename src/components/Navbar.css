@@ -1,0 +1,87 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #1E2D3D;
+  height: 56.19px;
+  padding: 22px;
+}
+
+nav p {
+  color: #607B96;
+  width: 310px;
+  font-size: 16px;
+}
+
+nav p:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.active {
+  color: #fff;
+  border-bottom: 3px solid #FEA55F;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav li {
+  /* margin: 0 10px;  */
+  height: 56.19px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hello-li {
+  width: 110px;
+  border-left: 1px solid #1E2D3D;
+  border-right: 1px solid #1E2D3D;
+}
+
+.about-li {
+  width: 140px;
+}
+
+.projects-li {
+  width: 120px;
+  border-right: 1px solid #1E2D3D;
+  border-left: 1px solid #1E2D3D;
+
+}
+
+.speak-me {
+  width: 120px;
+  border-left: 1px solid #1E2D3D;
+  height: 56.19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav a:hover {
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: #607B96;
+  font-size: 16px;
+}
+
+.speak {
+  width: 150px;
+}
+
+Estilo para a primeira <li> para remover a borda à esquerda
+nav li:first-child {
+  border-left: none;
+}

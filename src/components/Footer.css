@@ -1,0 +1,68 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #1E2D3D;
+  height: 49.74px;
+}
+
+
+footer p {
+  color: #607B96;
+  font-size: 16px;
+  cursor: pointer;
+  width: 146px;
+  height: 49.74px;
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid #1E2D3D;
+  align-items: center;
+}
+
+footer p:hover {
+  color: #fff;
+  font-size: 16px;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: #607B96;
+  font-size: 16px;
+}
+
+.whats-footer {
+  height: 49.74px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin-footer {
+  height: 49.74px;
+  border-right: 1px solid #1E2D3D;
+  border-left: 1px solid #1E2D3D;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-github {
+  height: 49.74px;
+  border-left: 1px solid #1E2D3D;
+  width: 161px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.footer-github:hover {
+  color: #fff;
+  cursor: pointer;
+}

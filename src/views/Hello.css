@@ -1,0 +1,67 @@
+.hello-section {
+  display: flex; 
+  justify-content: center;
+  width: 100%;
+}
+
+
+.apresentation {
+  color: #E5E9F0;
+  font-size: 18px;
+}
+
+.hello-container {
+  margin-top: 265px;
+  margin-left: 200px;
+  width: 100%;
+}
+
+.hello-container .title {
+  font-size: 62px;
+  color: #E5E9F0;
+  font-weight: 400;
+}
+
+.hello-container h2 {
+  color: #4D5BCE;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.links-hello {
+  margin-top: 81px;
+}
+
+.comments {
+  color: #607B96;
+  font-size: 16px;
+}
+
+.const {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.const-color {
+  color: #4D5BCE;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.const span {
+  color: #43D9AD;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.const a {
+  color: #E99287;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.gradient {
+  width: 100%;
+}
+
+
