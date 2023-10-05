@@ -203,3 +203,110 @@
   display: flex;
   justify-content: center;
 }
+
+.about-mobile {
+  height: 100vh;
+  width: 100%;
+}
+
+.about-title {
+  color: #fff;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.box-info {
+  height: 31px;
+  background-color: #1E2D3D;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  width: 345px;
+  margin-top: 3px;
+}
+
+.box-section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-title {
+  color: #fff;
+}
+
+.text-about-mobile-title {
+  display: flex;
+  align-items: center;
+  padding-top: 38px;
+  padding-left: 40px;
+}
+
+.bio {
+  color: #607B96;
+  margin-left: 10px;
+}
+
+.text-about-me {
+  color: #607B96;
+  font-size: 16px;
+  padding-top: 17px;
+  width: 310px;
+  padding-left: 40px;
+}
+
+.title-snippet {
+  color: #fff;
+  padding-left: 40px;
+  padding-top: 48px;
+}
+
+.snippet-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.snippet-box img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+
+.name-image {
+  display: flex;
+}
+
+.username {
+  color: #5565E8;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.name-image span {
+  color: #607B96;
+  font-size: 12px;
+}
+
+.details {
+  display: flex;
+  color: #607b96;
+}
+
+.details:hover {
+  color: #fff;
+}
+
+.details p {
+  margin-left: 10px;
+}
+
+.snippet-container-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

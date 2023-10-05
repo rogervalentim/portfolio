@@ -14,15 +14,84 @@ import { MdEmail } from "react-icons/md"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { AiOutlineClose, AiFillStar } from "react-icons/ai" 
 import { FaComments } from "react-icons/fa"
+import { IoMdArrowDropright } from "react-icons/io"
 
 import CodeSnippet2 from "../assets/codes/code-snippet-2.png"
 
 import  Perfil  from "../assets/perfil.jpg"
+import { useMediaQuery } from 'react-responsive'
+
+import SnippetMobile from "../assets/snippet-mobile.png"
 
 const About = () => {
+
+  const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
     <>
-    <section className="about-section">
+    {isMobile ? (
+      <>
+      <section className="about-mobile">
+        <p className="about-title">_sobre-mim</p>
+
+      <div className="box-section">      
+        <div className="box-info">
+        <IoMdArrowDropright fontSize={18} color="#fff" />
+          informações pessoais
+        </div>
+        <div className="box-info">
+          <IoMdArrowDropright fontSize={18} color="#fff" />
+          interesses
+          </div>
+        <div className="box-info">
+        <IoMdArrowDropright fontSize={18} color="#fff" />
+          hobbies
+          </div>
+        <div className="box-info">
+        <IoMdArrowDropright fontSize={18} color="#fff" />
+          contatos
+          </div>
+        </div>
+
+        <div className="text-about-mobile">
+          <div className="text-about-mobile-title">
+          <p className="info-title">{`//`} informações pessoais</p>
+          <p className="bio">{`/`}bio</p>
+        </div>
+
+        <p className="text-about-me">
+        I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat officia deserunt mollit anim id est laborum.
+        </p>
+        
+        </div>
+
+        <div>
+          <p className="title-snippet">// vitrine de trechos de código:</p>
+
+          <div className="snippet-box">
+            <div className="name-image">
+            <img src={Perfil} alt="foto de perfil" />
+            <p className="username">@rogervalentim
+            <br></br>
+            <span>3 meses atrás</span>
+            </p>
+            </div>
+            <div className="details">
+              <FaComments />
+              <p>detalhes</p>
+            </div>
+          </div>
+
+          <div className="snippet-container-mobile">
+          <img src ={SnippetMobile} alt="trechos de código" />
+          </div>
+        </div>
+
+
+      </section>
+      </>
+    ): (   
+      <>
+      <section className="about-section">
       <ul className="about-icons">
         <li>
         <ChevronRightSquare color="#607B96"fontSize={25} />
@@ -166,6 +235,8 @@ const About = () => {
 
 
     </section>
+      </>
+    )}
     </>
   )
 }

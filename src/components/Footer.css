@@ -67,3 +67,14 @@ footer a {
   color: #fff;
   cursor: pointer;
 }
+
+@media screen and (max-width: 650px) {
+  footer {
+    margin-top: 600px;
+  }
+  
+  .footer-github {
+    display: none;
+  }
+
+}
