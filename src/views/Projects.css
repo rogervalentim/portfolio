@@ -12,16 +12,13 @@
   padding: 10px;
   color: #fff;
   font-size: 16px;
-  /* border-right: 1px solid #1E2D3D; */
   border-bottom: 1px solid #1E2D3D;
   height: 40px;
   width: 335px;
 }
 
 .projects-technologies {
-  /* border-right: 1px solid #1E2D3D; */
   width: 335px;
-  /* height: 100vh; */
 }
 
 .projects-container p {
@@ -73,4 +70,28 @@
   grid-template-columns: auto auto auto;
   justify-content: center;
   padding-top: 50px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .grid-cards-projects {
+  grid-template-columns: auto;
+  }
+
+  .title-project-mobile {
+    margin-top: 20px;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .category-project {
+    color: #fff;
+    padding-top: 40px;
+    padding-left: 40px;
+  }
+
+  .category-project code {
+    color: #607B96;
+  }
 }

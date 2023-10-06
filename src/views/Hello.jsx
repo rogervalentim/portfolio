@@ -26,7 +26,7 @@ const Hello = () => {
 
         <div className="links-hello">
           <p className="comments">
-          {`//`} você pode também pode ver a minha página no github
+          {`//`} Encontre o meu perfil no github
           </p>
           <p className="const"><code className="const-color">const</code> <span>githubLink</span>
           

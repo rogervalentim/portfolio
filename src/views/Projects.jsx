@@ -7,9 +7,50 @@ import { AiOutlineClose } from "react-icons/ai"
 import CardsProjects from '../components/CardsProjects'
 import { projects } from "../constants/data"
 
+import { useMediaQuery  } from 'react-responsive'
+
+import { IoMdArrowDropright } from "react-icons/io"
+
 
 const Projects = () => {
+
+  const isMobile = useMediaQuery({ maxWidth: 767 })
+
   return (
+    <>
+    {isMobile ? (
+      <section className="projects-mobile">
+        <p className="title-project-mobile">
+          _projetos
+        </p>
+
+        <div className="box-section">      
+        <div className="box-info">
+        <IoMdArrowDropright fontSize={18} color="#fff" />
+          projetos
+        </div>
+        </div>
+
+        <div>
+          <p className="category-project">
+            {`//`} projetos <code>{`//`}  todos</code>
+          </p>
+        
+          <div className="grid-cards-projects">
+         {projects.map((item) => (
+          <CardsProjects 
+          key={item.title}
+          project={item.project}
+          title={item.title}
+          text={item.text}
+          image={item.image}
+          link={item.link}
+        />
+      ))}
+    </div>
+        </div>
+        </section>
+    ): (
     <>
     <section className="projects-section">
       <div>
@@ -55,6 +96,8 @@ const Projects = () => {
 
        
     </section>
+    </>
+    )}
     </>
   )
 }

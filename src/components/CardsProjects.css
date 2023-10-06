@@ -60,3 +60,22 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 767px) {
+  .card-project {
+    margin-top: 20px;
+  }
+
+  .card-project img {
+    width: 291px;
+  }
+
+  .card-content {
+    width: 291px;
+  }
+
+  .project-text {
+    width: 229px;
+  }
+
+}

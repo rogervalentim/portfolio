@@ -29,7 +29,7 @@ nav .nav-web {
   list-style: none;
 }
 
-nav li {
+.hello-li, .about-li , .projects-li{
   /* margin: 0 10px;  */
   height: 56.19px; 
   display: flex;
@@ -122,6 +122,10 @@ nav li:first-child {
   cursor: pointer;
 }
 
+.app__navbar-smallscreen_overlay .overlay__close:hover {
+  color: #fff;
+}
+
 
 .app__navbar-smallscreen_links {
   list-style: none;
@@ -135,6 +139,10 @@ nav li:first-child {
   cursor: pointer;
   border-bottom: 1px solid #1E2D3D;
   font-size: 16px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding-left: 18px;
   color: #fff;
 }
 
@@ -151,15 +159,3 @@ nav li:first-child {
   }
 }
 
-@media screen and (max-width: 650px) {
-  .app__navbar {
-    /* padding: 1rem; */
-
-  }
-
-
-  .app__navbar-login {
-    display: none;
-  }
-
-}
