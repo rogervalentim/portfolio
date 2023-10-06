@@ -42,6 +42,7 @@ const Contact = () => {
 
   const togglePerfil = () => {
     setShowPerfil(!showPerfil)
+    setShowContacts(false)
   }
 
   return (

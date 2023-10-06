@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import "./About.css"
 
@@ -24,6 +24,27 @@ import { useMediaQuery } from 'react-responsive'
 import SnippetMobile from "../assets/snippet-mobile.png"
 
 const About = () => {
+  const [showInfo, setShowInfo] = useState(false)
+  const  [showIcons, setShowIcons] = useState(false)
+  const [showContacts, setShowContacts] = useState(false)
+
+  const toggleInfo = () => {
+    setShowInfo(!showInfo)
+    setShowIcons(false)
+    setShowContacts(false)
+  }
+
+  const toggleIcons = () => {
+    setShowIcons(!showIcons)
+    setShowInfo(false)
+    setShowContacts(false)
+  }
+
+  const toggleContacts = () => {
+    setShowIcons(false)
+    setShowInfo(false)
+    setShowContacts(!showContacts)
+  }
 
   const isMobile = useMediaQuery({ maxWidth: 767 })
   return (
@@ -35,21 +56,89 @@ const About = () => {
 
       <div className="box-section">      
         <div className="box-info">
-        <IoMdArrowDropright fontSize={18} color="#fff" />
+        <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleInfo} />
           informações pessoais
         </div>
+
+      {showInfo && (
+        <ul className="folders-info">
+          <li>
+            <MdKeyboardArrowRight fontSize={16} />
+            <BsFolderFill color="#E99287" className="folder"  />
+            <p>
+            Bio
+            </p>
+          </li>
+          <li>
+            <MdKeyboardArrowRight fontSize={16} />
+            <BsFolderFill color="#43D9AD"  className="folder" />
+            <p>
+            Interesses
+            </p>
+          </li>
+          <li>
+          <IoIosArrowDown fontSize={16} />
+          <BsFolderFill color="#3A49A4" className="folder" />
+          <p>
+          Educação
+          </p>
+          </li>
+          <li className="markdown">
+            <RiMarkdownFill color="#607B96" />
+            <p>
+            Escola
+            </p>
+          </li>
+          <li className="markdown">
+            <RiMarkdownFill color="#607B96" />
+            <p>
+            Faculdade
+            </p>
+          </li>
+        </ul>
+      )}
+
         <div className="box-info">
-          <IoMdArrowDropright fontSize={18} color="#fff" />
-          interesses
-          </div>
-        <div className="box-info">
-        <IoMdArrowDropright fontSize={18} color="#fff" />
+        <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleIcons} />
           hobbies
           </div>
+
+     {showIcons && (
+      <ul className="about-icons-mobile">
+        <li>
+        <ChevronRightSquare color="#607B96"fontSize={25} />
+        </li>
+        <li>
+        <PiSoccerBallFill color="#607B96" fontSize={25} />
+        </li>
+        <li>
+        <IoLogoGameControllerA color="#607B96" fontSize={25} />
+        </li>
+      </ul>
+     )}
+
         <div className="box-info">
-        <IoMdArrowDropright fontSize={18} color="#fff" />
+        <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleContacts} />
           contatos
           </div>
+
+          {showContacts && (
+              <ul className="contacts-ul">
+              <li>
+              <MdEmail fontSize={12} color="#607B96"  />
+              <p>
+              valentim.roger33@gmail.com
+              </p>
+              </li>
+              <li>
+              <BsFillTelephoneFill fontSize={12} color="#607B96"  />
+              <p>
+              (11)97050-6367
+              </p>
+              </li>
+            </ul>    
+        )}
+          
         </div>
 
         <div className="text-about-mobile">
