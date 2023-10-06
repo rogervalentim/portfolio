@@ -27,9 +27,22 @@ const Contact = () => {
     });
   };
 
+  const [showContacts, setShowContacts] = useState(false)
+
+  const [showPerfil, setShowPerfil] = useState(false)
+
   const today = new Date().toLocaleDateString()
 
   const isMobile = useMediaQuery({maxWidth: 767})
+
+  const toggleContacts = () => {
+    setShowContacts(!showContacts)
+    setShowPerfil(false)
+  }
+
+  const togglePerfil = () => {
+    setShowPerfil(!showPerfil)
+  }
 
   return (
     <>
@@ -42,13 +55,40 @@ const Contact = () => {
         
         <div className="box-section">      
         <div className="box-info">
-        <IoMdArrowDropright fontSize={18} color="#fff" />
+        <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleContacts} />
           contatos
         </div>
+
+        {showContacts && (
+              <ul className="contacts-ul">
+              <li>
+              <MdEmail fontSize={12} color="#607B96"  />
+              <p>
+              valentim.roger33@gmail.com
+              </p>
+              </li>
+              <li>
+              <BsFillTelephoneFill fontSize={12} color="#607B96"  />
+              <p>
+              (11)97050-6367
+              </p>
+              </li>
+            </ul>    
+        )}
+    
         <div className="box-info">
-        <IoMdArrowDropright fontSize={18} color="#fff" />
+        <IoMdArrowDropright fontSize={18} color="#fff" onClick={togglePerfil} />
           me encontre também no
         </div>
+
+        {showPerfil && (
+        <ul className="links-find">
+         <li>
+          <FiExternalLink fontSize={18} color="#607B96" />
+          <a href="https://www.linkedin.com/in/rogervalentim33/" target="__blank">Perfil do Likedin</a>
+          </li>
+        </ul>
+        )}
         </div>
 
         <form className="form-mobile">
