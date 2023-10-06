@@ -190,3 +190,52 @@ margin-left: 10px;
 .text-form .yellow {
   color: #FEA55F;
 }
+
+.contact-mobile-title {
+  color: #fff;
+  font-size: 14px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.form-mobile {
+  display: flex;
+  flex-direction: column;
+  padding-top: 47px;
+  padding-left: 27px;
+}
+
+.form-mobile label {
+  color: #607B96;
+  margin-top: 18px;
+}
+
+.form-mobile input {
+  width: 291px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #011221;
+  border: 1px solid #1E2D3D;
+  color: #465E77;
+  margin-top: 10px;
+}
+
+.form-mobile textarea { 
+  width: 291px;
+  height: 145px;
+  resize: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  background-color: #011221;
+  border: 1px solid #1E2D3D;
+}
+
+.form-mobile button {
+  background-color: #1C2B3A;
+  color: #fff;
+  width: 146px;
+  height: 38px;
+  margin-top: 18px;
+  border: none;
+  border-radius: 8px;
+}

@@ -7,7 +7,10 @@ import { BsFillTelephoneFill } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 import { FiExternalLink } from "react-icons/fi"
 import { AiOutlineClose } from "react-icons/ai"
+import { IoMdArrowDropright } from "react-icons/io"
 
+
+import { useMediaQuery } from 'react-responsive'
 
 const Contact = () => {
   const [formValues, setFormValues] = useState({
@@ -26,8 +29,56 @@ const Contact = () => {
 
   const today = new Date().toLocaleDateString()
 
+  const isMobile = useMediaQuery({maxWidth: 767})
+
   return (
-    <section className="contact-section">
+    <>
+    {isMobile ? (
+      <>
+      <section className="contact-mobile">
+        <p className="contact-mobile-title">
+          _fale comigo
+        </p>
+        
+        <div className="box-section">      
+        <div className="box-info">
+        <IoMdArrowDropright fontSize={18} color="#fff" />
+          contatos
+        </div>
+        <div className="box-info">
+        <IoMdArrowDropright fontSize={18} color="#fff" />
+          me encontre também no
+        </div>
+        </div>
+
+        <form className="form-mobile">
+          <label htmlFor="">
+            _nome:
+          </label>
+
+          <input type="text" name="nome" id="nome" />
+
+          <label htmlFor="">
+            _email:
+          </label>
+
+          <input type="email" name="email" id="email" />
+
+          <label htmlFor="">
+            _mensagem:
+          </label>
+
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+
+          <button type="submit">
+            enviar mensagem
+          </button>
+        </form>
+      </section>
+      </>
+    ) : (
+      <>
+        <section className="contact-section">
       <div className="contact-container-info">
       <div className="info-contact">
         <BiSolidDownArrow fontSize={10} color="#fff"  />
@@ -156,6 +207,9 @@ const Contact = () => {
 
 
     </section>
+      </>
+    )}
+    </>
   )
 }
 

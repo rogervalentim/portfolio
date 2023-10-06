@@ -2,7 +2,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #1E2D3D;
+  border-bottom: 1px solid #1E2D3D;
   height: 56.19px;
   padding: 22px;
 }
