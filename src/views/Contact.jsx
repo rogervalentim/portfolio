@@ -6,9 +6,10 @@ import { BiSolidDownArrow } from "react-icons/bi"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 import { FiExternalLink } from "react-icons/fi"
-import { AiOutlineClose } from "react-icons/ai"
+import { AiOutlineClose, AiOutlineDownload  } from "react-icons/ai"
 import { IoMdArrowDropright } from "react-icons/io"
 
+import Curriculum from "../assets/CV-ROGER-VALENTIM-DA-SILVA.pdf"
 
 import { useMediaQuery } from 'react-responsive'
 
@@ -31,6 +32,8 @@ const Contact = () => {
 
   const [showPerfil, setShowPerfil] = useState(false)
 
+  const [showCurriculo, setShowCurriculo] = useState(false)
+
   const today = new Date().toLocaleDateString()
 
   const isMobile = useMediaQuery({maxWidth: 767})
@@ -38,11 +41,19 @@ const Contact = () => {
   const toggleContacts = () => {
     setShowContacts(!showContacts)
     setShowPerfil(false)
+    setShowCurriculo(false)
   }
 
   const togglePerfil = () => {
     setShowPerfil(!showPerfil)
     setShowContacts(false)
+    setShowCurriculo(false)
+  }
+  
+  const toggleCurriculo = () => {
+    setShowCurriculo(!showCurriculo)
+    setShowContacts(false)
+    setShowPerfil(false)
   }
 
   return (
@@ -90,6 +101,18 @@ const Contact = () => {
           </li>
         </ul>
         )}
+
+
+    <div className="box-info">
+        <IoMdArrowDropright fontSize={18} color="#fff" onClick={togglePerfil} onClick={toggleCurriculo} />
+          curriculo
+        </div>
+
+  {showCurriculo && (
+   <ul className="curriculo-container">
+       <li className="curriculo-link" href="#"><AiOutlineDownload fontSize={20} color="#607B96" /><a href={Curriculum} target="__blank">Baixar curriculo</a></li>
+       </ul> 
+  )}
         </div>
 
         <form className="form-mobile">
@@ -139,6 +162,17 @@ const Contact = () => {
           </p>
           </li>
         </ul>
+
+        <div className="info-curriculum">
+        <BiSolidDownArrow fontSize={10} color="#fff"  />
+        <p>Curriculo</p>
+        </div>
+ 
+
+       <ul className="curriculo-container">
+       <li className="curriculo-link" href="#"><AiOutlineDownload fontSize={20} color="#607B96" /><a href={Curriculum} target="__blank">Baixar curriculo</a></li>
+       </ul>
+
         <div className="find-me-also">
         <BiSolidDownArrow fontSize={10} color="#fff"  />
         <p>Me encontre também no</p>

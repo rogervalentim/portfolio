@@ -69,6 +69,52 @@ margin-left: 10px;
   color: #607B96;
 } 
 
+.info-curriculum {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  border-top: 1px solid #1E2D3D;
+  border-bottom: 1px solid #1E2D3D;
+  height: 40px;
+  width: 333px;
+}
+
+
+.curriculo-container {
+  height: 60px;
+}
+
+.curriculo-link {
+  text-decoration: none;
+  color: #607B96;
+  font-size: 14px;
+  padding-top: 17px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.curriculo-container li {
+  display: flex;
+  font-size: 18px;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 14px;
+  color: #607B96;
+}
+
+.curriculo-container a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #607B96;
+}
+
+.curriculo-container a:hover, li:hover {
+  color: #fff;
+}
+
 .links-find a {
   text-decoration: none;
   margin-left: 10px;
@@ -191,6 +237,7 @@ margin-left: 10px;
   color: #FEA55F;
 }
 
+/* mobile  */
 .contact-mobile-title {
   color: #fff;
   font-size: 14px;
@@ -242,3 +289,4 @@ margin-left: 10px;
   border: none;
   border-radius: 8px;
 }
+
