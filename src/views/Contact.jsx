@@ -104,7 +104,7 @@ const Contact = () => {
 
 
     <div className="box-info">
-        <IoMdArrowDropright fontSize={18} color="#fff" onClick={togglePerfil} onClick={toggleCurriculo} />
+        <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleCurriculo} />
           curriculo
         </div>
 
