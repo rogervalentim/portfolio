@@ -22,9 +22,11 @@ const Navbar = () => {
           <li className="projects-li">_Projetos</li>
         </NavLink>
       </ul>
+      <ul className="nav-web">
       <NavLink to="contato">
         <li className="speak-me">_Fale Comigo</li>
       </NavLink>
+      </ul>
 
       <div className="app__navbar-smallscreen">
         <p>Roger-Valentim</p>

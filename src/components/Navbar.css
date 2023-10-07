@@ -60,9 +60,7 @@ nav .nav-web {
   border-left: 1px solid #1E2D3D;
   height: 56.19px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 nav a:hover {
@@ -77,9 +75,6 @@ nav a {
   font-size: 16px;
 }
 
-.speak {
-  width: 150px;
-}
 
 Estilo para a primeira <li> para remover a borda à esquerda
 nav li:first-child {

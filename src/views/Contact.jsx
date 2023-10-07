@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useForm } from "react-hook-form";
 
 import "./Contact.css"
 
@@ -14,11 +15,18 @@ import Curriculum from "../assets/CV-ROGER-VALENTIM-DA-SILVA.pdf"
 import { useMediaQuery } from 'react-responsive'
 
 const Contact = () => {
+  const [showContacts, setShowContacts] = useState(false)
+
+  const [showPerfil, setShowPerfil] = useState(false)
+
+  const [showCurriculo, setShowCurriculo] = useState(false)
+
   const [formValues, setFormValues] = useState({
     nome: '',
     email: '',
     mensagem: '',
   });
+
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -28,12 +36,18 @@ const Contact = () => {
     });
   };
 
-  const [showContacts, setShowContacts] = useState(false)
-
-  const [showPerfil, setShowPerfil] = useState(false)
-
-  const [showCurriculo, setShowCurriculo] = useState(false)
-
+    const {
+      register,
+      trigger,
+    } = useForm();
+  
+    const onSubmit = async (e) => {
+      const isValid = await trigger();
+      if (!isValid) {
+        e.preventDefault();
+      }
+    };
+  
   const today = new Date().toLocaleDateString()
 
   const isMobile = useMediaQuery({maxWidth: 767})
@@ -196,7 +210,11 @@ const Contact = () => {
 
       <div className="contact-container-form">
         <div className="form-contact">
-          <form action="">
+          <form 
+            method="POST"  
+            action="https://formsubmit.co/2c7272e290e3a0edfd38242fcde1b487"
+            onSubmit={onSubmit}
+            >
             <label htmlFor="">_nome:</label>
             <input type="text" name="nome" id="nome" value={formValues.nome} onChange={handleInputChange} required />
 
