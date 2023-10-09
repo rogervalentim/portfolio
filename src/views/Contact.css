@@ -1,6 +1,7 @@
 .contact-section {
   height: 100vh;
   display: flex;
+
 }
 
 .contact-container-info {
@@ -144,14 +145,14 @@ margin-left: 10px;
   border-top: 1px solid #1E2D3D;
   border-right: 1px solid #1E2D3D;
   height: 95vh;
-  width: 550px;
+  width: 425px;
 }
 
 .form-contact form {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
-  margin-left: 127px;
+  padding-left: 10%;
 }
 
 .contact-container-form {
@@ -174,6 +175,9 @@ margin-left: 10px;
 }
 
 .form-contact textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   resize: none;
   width: 372px;
   height: 145px;
@@ -195,13 +199,13 @@ margin-left: 10px;
 }
 
 .text-form {
-  width: 600px;
+  width: 575px;
   border-top: 1px solid #1E2D3D;
   border-right: 1px solid #1E2D3D;
   height: 94vh;
   display: flex;
   justify-content: center;
-  padding-top: 130px;
+  align-items: center;
 }
 
 .retangule-contact {
@@ -291,4 +295,3 @@ margin-left: 10px;
   border: none;
   border-radius: 8px;
 }
-

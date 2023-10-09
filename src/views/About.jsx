@@ -265,7 +265,7 @@ const About = () => {
         <div className="list-about-me">
           <ol>
             <li><p>{`/**`} Sobre Mim</p></li>
-            <li><p>{`*`}Sou um apaixonado desenvolvedor frontend com  </p></li>
+            <li><p>{`*`}Sou um apaixonado desenvolvedor frontend com</p></li>
             <li><p>{`*`}uma habilidade especial para transformar </p></li>
             <li><p>{`*`}conceitos criativos em interfaces digitais</p></li>
             <li><p>{`*`}interativas e intuitivas. Minha jornada no</p></li>
@@ -288,8 +288,6 @@ const About = () => {
           </ol>
         </div>
       </div>
-
-    <div className="retangule" />
 
     <div className="codes">
       <div className="border-top" />

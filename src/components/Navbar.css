@@ -23,14 +23,13 @@ nav p:hover {
   border-bottom: 3px solid #FEA55F;
 }
 
-nav .nav-web {
+ .nav-web {
   display: flex;
   align-items: center;
   list-style: none;
 }
 
-.hello-li, .about-li , .projects-li{
-  /* margin: 0 10px;  */
+.hello-li, .about-li , .projects-li, .speak-me{
   height: 56.19px; 
   display: flex;
   justify-content: center;
@@ -58,9 +57,7 @@ nav .nav-web {
 .speak-me {
   width: 120px;
   border-left: 1px solid #1E2D3D;
-  height: 56.19px;
-  display: flex;
-  align-items: center;
+  
 }
 
 nav a:hover {
@@ -154,4 +151,3 @@ nav li:first-child {
     width: 100%;
   }
 }
-
