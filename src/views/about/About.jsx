@@ -16,12 +16,12 @@ import { AiOutlineClose, AiFillStar } from "react-icons/ai"
 import { FaComments } from "react-icons/fa"
 import { IoMdArrowDropright } from "react-icons/io"
 
-import CodeSnippet2 from "../assets/codes/code-snippet-2.png"
+import CodeSnippet2 from "../../assets/codes/code-snippet-2.png"
 
-import  Perfil  from "../assets/perfil.jpg"
+import  Perfil  from "../../assets/perfil.jpg"
 import { useMediaQuery } from 'react-responsive'
 
-import SnippetMobile from "../assets/snippet-mobile.png"
+import SnippetMobile from "../../assets/snippet-mobile.png"
 
 const About = () => {
   const [showInfo, setShowInfo] = useState(false)

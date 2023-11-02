@@ -10,7 +10,7 @@ import { FiExternalLink } from "react-icons/fi"
 import { AiOutlineClose, AiOutlineDownload  } from "react-icons/ai"
 import { IoMdArrowDropright } from "react-icons/io"
 
-import Curriculum from "../assets/CV-ROGER-VALENTIM-DA-SILVA.pdf"
+import Curriculum from "../../assets/CV-ROGER-VALENTIM-DA-SILVA.pdf"
 
 import { useMediaQuery } from 'react-responsive'
 

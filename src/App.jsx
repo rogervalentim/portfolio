@@ -1,14 +1,11 @@
 import React from 'react'
 
 import "./App.css"
-import Navbar from './components/Navbar'
-import Hello from './views/Hello'
-import Projects from "./views/Projects"
-import Contact from './views/Contact'
-import Footer from './components/Footer'
+
+import { Navbar, Footer } from './components/index'
+import { Hello, About, Projects, Contact } from "./views/index"
 
 import { HashRouter, Routes , Route} from "react-router-dom"
-import About from './views/About'
 
 const App = () => {
   return (

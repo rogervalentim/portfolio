@@ -13,8 +13,8 @@ export const projects = [
   {
     "project": "Projeto 2",
     "title": "// Spotify Clone",
-    "text": "O spotify clone é uma  interface ...",
-    "link": "https://spotify-clone-one-beige.vercel.app/",
+    "text": "O spotify clone é uma  interface , onde eu consumo a api do spotify.",
+    "link": "https://spotify-clone-rfha.vercel.app/",
     "image": ProjectImage2,
   },
   {

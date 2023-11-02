@@ -4,8 +4,10 @@ import "./Projects.css"
 
 import { BiSolidDownArrow, BiLogoReact } from "react-icons/bi"
 import { AiOutlineClose } from "react-icons/ai" 
-import CardsProjects from '../components/CardsProjects'
-import { projects } from "../constants/data"
+
+import { CardsProjects } from '../../components/index'
+
+import { projects } from "../../constants/data"
 
 import { useMediaQuery  } from 'react-responsive'
 

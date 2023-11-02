@@ -2,11 +2,11 @@ import React from 'react'
 
 import "./Hello.css"
 
-import CodeSnippet1 from "../assets/codes/code-snippet-1.png"
-import CodeSnippet2 from "../assets/codes/code-snippet-2.png"
-import CodeSnippet3 from "../assets/codes/code-snippet-3.png"
-import CodeSnippet4 from "../assets/codes/code-snippet-4.png"
-import CodeSnippet5 from "../assets/codes/code-snippet-5.png"
+import CodeSnippet1 from "../../assets/codes/code-snippet-1.png"
+import CodeSnippet2 from "../../assets/codes/code-snippet-2.png"
+import CodeSnippet3 from "../../assets/codes/code-snippet-3.png"
+import CodeSnippet4 from "../../assets/codes/code-snippet-4.png"
+import CodeSnippet5 from "../../assets/codes/code-snippet-5.png"
 
 import { useMediaQuery } from 'react-responsive'
 
