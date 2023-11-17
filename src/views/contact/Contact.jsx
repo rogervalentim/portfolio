@@ -8,7 +8,7 @@ import { BsFillTelephoneFill } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 import { FiExternalLink } from "react-icons/fi"
 import { AiOutlineClose, AiOutlineDownload  } from "react-icons/ai"
-import { IoMdArrowDropright } from "react-icons/io"
+import { IoMdArrowDropright, IoMdArrowDropdown } from "react-icons/io"
 
 import Curriculum from "../../assets/CV-ROGER-VALENTIM-DA-SILVA.pdf"
 
@@ -81,7 +81,9 @@ const Contact = () => {
         
         <div className="box-section">      
         <div className="box-info">
+        {showContacts ? <IoMdArrowDropdown fontSize={18} color="#fff" onClick={toggleContacts} /> : 
         <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleContacts} />
+      }
           contatos
         </div>
 
@@ -103,7 +105,9 @@ const Contact = () => {
         )}
     
         <div className="box-info">
+        {showPerfil ? <IoMdArrowDropdown fontSize={18} color="#fff" onClick={togglePerfil} /> : 
         <IoMdArrowDropright fontSize={18} color="#fff" onClick={togglePerfil} />
+      }
           me encontre também no
         </div>
 
@@ -118,7 +122,9 @@ const Contact = () => {
 
 
     <div className="box-info">
+    {showCurriculo ? <IoMdArrowDropdown fontSize={18} color="#fff" onClick={toggleCurriculo} /> : 
         <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleCurriculo} />
+      }
           curriculo
         </div>
 
