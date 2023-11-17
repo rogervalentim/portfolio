@@ -19,9 +19,9 @@ export const projects = [
   },
   {
     "project": "Projeto 3",
-    "title": "// Dashboard",
-    "text": "O Dashboard é um painel que mostra indicadores de negócios de usuários.",
-    "link": "https://dashboard-frontend1.onrender.com/dashboard",
+    "title": "// Carhub",
+    "text": "O carhub é um site, com a idéia de mostrar um catálogo de carros de aluguel.",
+    "link": "https://cars-lime-iota.vercel.app/",
     "image": ProjectImage3,
   },
 ]
