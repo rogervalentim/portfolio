@@ -73,19 +73,20 @@ nav a {
 }
 
 
-Estilo para a primeira <li> para remover a borda à esquerda
-nav li:first-child {
-  border-left: none;
-}
-
 .app__navbar-smallscreen {
   display: none;
 }
 
 .app__navbar-links {
   display: flex;
-  flex-1;
+  flex: 1;
   list-style: none; 
+}
+
+.app_navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 

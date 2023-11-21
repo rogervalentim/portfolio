@@ -46,7 +46,7 @@ const About = () => {
     setShowContacts(!showContacts)
   }
 
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   return (
     <>
     {isMobile ? (

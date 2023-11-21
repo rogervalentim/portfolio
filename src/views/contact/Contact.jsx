@@ -254,19 +254,19 @@ const Contact = () => {
           </li>
           <li>
             <code className="purple" style={{marginLeft: "10px"}} >nome:</code>
-          <code className="yellow" style={{marginLeft: "10px"}}>"{formValues.nome}"</code>
+          <code className="yellow" style={{marginLeft: "10px"}}>{`"{formValues.nome}"`}</code>
           </li>
           <li >
             <code className="purple" style={{marginLeft: "10px"}} >email:</code>
-          <code className="yellow" style={{marginLeft: "10px"}}>"{formValues.email}"</code>
+          <code className="yellow" style={{marginLeft: "10px"}}>{`"{formValues.email}"`}</code>
           </li>
           <li>
             <code className="purple" style={{marginLeft: "10px"}} >mensagem:</code>
-          <code className="yellow" style={{marginLeft: "10px"}}>"{formValues.mensagem}"</code>
+          <code className="yellow" style={{marginLeft: "10px"}}>{`"{formValues.mensagem}"`}</code>
           </li>
           <li >
             <code style={{marginLeft: "10px"}}>data:</code>
-          <code className="yellow" style={{marginLeft: "10px"}}>"{today}"</code>
+          <code className="yellow" style={{marginLeft: "10px"}}>{`"{today}"`}</code>
           </li>
           <li>
           <code style={{marginLeft: "5px"}}>{`}`}</code>

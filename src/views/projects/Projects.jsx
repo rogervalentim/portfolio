@@ -16,7 +16,7 @@ import { IoMdArrowDropright } from "react-icons/io"
 
 const Projects = () => {
 
-  const isMobile = useMediaQuery({ maxWidth: 767 })
+  const isMobile = useMediaQuery({ maxWidth: 768 })
 
   return (
     <>

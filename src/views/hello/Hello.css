@@ -124,3 +124,16 @@
  padding-left: 10%;
 }
 
+
+@media screen and (max-width: 768px) {
+  .hello-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gradient-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

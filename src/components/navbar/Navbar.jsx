@@ -29,6 +29,8 @@ const Navbar = () => {
       </ul>
 
       <div className="app__navbar-smallscreen">
+        <div className="app_navbar-menu">
+
         <p>Roger-Valentim</p>
 
         <GiHamburgerMenu
@@ -36,6 +38,7 @@ const Navbar = () => {
           fontSize={18}
           onClick={() => setToggleMenu(true)}
         />
+        </div>
 
         {toggleMenu &&
           <div className="app__navbar-smallscreen_overlay slide-bottom">
