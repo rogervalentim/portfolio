@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 768px) {
   .grid-cards-projects {
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   }
 
   .title-project-mobile {
