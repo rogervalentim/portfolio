@@ -4,10 +4,15 @@
   width: 100%;
 }
 
-
 .apresentation {
   color: #E5E9F0;
   font-size: 18px;
+}
+
+.text-apresentation {
+  color: #E5E9F0;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 .hello-container {
@@ -105,7 +110,7 @@
   font-weight: 400;
 }
 
-.apresentation-container p {
+.apresentation-container .title-home-mobile {
   width: 100%;
   font-size: 20px;
   color: #43D9AD;

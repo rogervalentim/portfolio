@@ -14,7 +14,7 @@ const Footer = () => {
           Me encontre no:
         </p>
         <li className="whats-footer" >
-          <a href="">
+          <a href="https://api.whatsapp.com/send/?phone=11970506367&text&type=phone_number&app_absent=0">
           <FaWhatsapp fontSize={20} />
           </a>
         </li>

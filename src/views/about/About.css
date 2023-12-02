@@ -9,7 +9,7 @@
   border-right: 1px solid #1E2D3D;
   align-items: center;
   list-style: none;
-  width: 70px;
+  width: 10%;
 }
 
 .about-icons li {
@@ -28,7 +28,7 @@
   font-size: 16px;
   border-bottom: 1px solid #1E2D3D;
   height: 40px;
-  width: 264px;
+  width: 100%;
 }
 
 .info p {
@@ -58,9 +58,11 @@
   margin-left: 10px;
 }
 
-.folders-info p:hover {
-  color: #fff;
-  cursor: pointer;
+.folders-info-content {
+  display: flex;
+  justify-content: center;
+  color: #dedede;
+  font-size: 16px;
 }
 
 .markdown {
