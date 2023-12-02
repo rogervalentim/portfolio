@@ -233,6 +233,7 @@
   display: flex;
   align-items: center;
   color: #fff;
+  cursor: pointer;
   width: 95%;
   padding-left: 38px;
   margin-top: 3px;

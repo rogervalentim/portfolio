@@ -14,7 +14,7 @@ import { MdEmail } from "react-icons/md"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { AiOutlineClose, AiFillStar } from "react-icons/ai"
 import { FaComments } from "react-icons/fa"
-import { IoMdArrowDropright } from "react-icons/io"
+import { IoMdArrowDropright, IoMdArrowDropdown } from "react-icons/io"
 
 import CodeSnippet2 from "../../assets/codes/code-snippet-2.png"
 
@@ -74,66 +74,70 @@ const About = () => {
 
             <div className="box-section">
               <div className="box-info">
-                <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleInfo} />
+                {showInfo ? <IoMdArrowDropdown fontSize={18} color="#fff" onClick={toggleInfo} /> :
+                  <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleInfo} />
+                }
                 informações pessoais
               </div>
 
               {showInfo && (
-                     <ul className="folders-info">
-                     <li onClick={toggleBio}>
-                       {bioContent ?
-                         <IoIosArrowDown  fontSize={20}   />
-                         :
-                         <MdKeyboardArrowRight fontSize={25}  />
-                       }
-                       <BsFolderFill color="#E99287" className="folder" />
-                       <p >
-                         Bio
-                       </p>
-                     </li>
-                     {bioContent && (
-                       <div className="bio-content">
-                         <p className='folders-info-content'>Tenho 23 anos,moro em Guarulhos-sp</p>
-                       </div>
-                     )}
-                     <li onClick={toggleInterests}>
-                       {showInterests ?
-                         <IoIosArrowDown  fontSize={20}   />
-                         :
-                         <MdKeyboardArrowRight fontSize={25}  />
-                       }
-                       <BsFolderFill color="#43D9AD" className="folder" />
-                       <p>
-                         Interesses
-                       </p>
-                     </li>
-                     {showInterests && (
-                       <div className="bio-content">
-                         <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas e virar especialista em desenvolvimento front-end.</p>
-                       </div>
-                     )}
-                     <li onClick={toggleEducation}>
-                     {showEducation ?
-                         <IoIosArrowDown  fontSize={20}   />
-                         :
-                         <MdKeyboardArrowRight fontSize={25}  />
-                       }
-                       <BsFolderFill color="#3A49A4" className="folder" />
-                       <p>
-                         Formação
-                       </p>
-                     </li>
-                     
-                     {showEducation && (
-                       <div className="bio-content">
-                         <p className='folders-info-content'><RiMarkdownFill color="#607B96" fontSize={18} /><a href={Certificado} target='__blank'>Digital House</a></p>
-                       </div>
-                     )}
-                   </ul>
+                <ul className="folders-info">
+                  <li onClick={toggleBio}>
+                    {bioContent ?
+                      <IoIosArrowDown fontSize={20} />
+                      :
+                      <MdKeyboardArrowRight fontSize={25} />
+                    }
+                    <BsFolderFill color="#E99287" className="folder" />
+                    <p >
+                      Bio
+                    </p>
+                  </li>
+                  {bioContent && (
+                    <div className="bio-content">
+                      <p className='folders-info-content'>Tenho 23 anos,moro em Guarulhos-sp</p>
+                    </div>
+                  )}
+                  <li onClick={toggleInterests}>
+                    {showInterests ?
+                      <IoIosArrowDown fontSize={20} />
+                      :
+                      <MdKeyboardArrowRight fontSize={25} />
+                    }
+                    <BsFolderFill color="#43D9AD" className="folder" />
+                    <p>
+                      Interesses
+                    </p>
+                  </li>
+                  {showInterests && (
+                    <div className="bio-content">
+                      <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas e virar especialista em desenvolvimento front-end.</p>
+                    </div>
+                  )}
+                  <li onClick={toggleEducation}>
+                    {showEducation ?
+                      <IoIosArrowDown fontSize={20} />
+                      :
+                      <MdKeyboardArrowRight fontSize={25} />
+                    }
+                    <BsFolderFill color="#3A49A4" className="folder" />
+                    <p>
+                      Formação
+                    </p>
+                  </li>
+
+                  {showEducation && (
+                    <div className="bio-content">
+                      <p className='folders-info-content'><RiMarkdownFill color="#607B96" fontSize={18} /><a href={Certificado} target='__blank'>Digital House</a></p>
+                    </div>
+                  )}
+                </ul>
               )}
 
               <div className="box-info">
-                <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleIcons} />
+              {showIcons ? <IoMdArrowDropdown fontSize={18} color="#fff" onClick={toggleIcons} /> :
+                  <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleIcons} />
+                }
                 hobbies
               </div>
 
@@ -152,7 +156,9 @@ const About = () => {
               )}
 
               <div className="box-info">
-                <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleContacts} />
+              {showContacts ? <IoMdArrowDropdown fontSize={18} color="#fff" onClick={toggleContacts} /> :
+                  <IoMdArrowDropright fontSize={18} color="#fff" onClick={toggleContacts} />
+                }
                 contatos
               </div>
 
@@ -236,9 +242,9 @@ const About = () => {
               <ul className="folders-info">
                 <li onClick={toggleBio}>
                   {bioContent ?
-                    <IoIosArrowDown  fontSize={20}   />
+                    <IoIosArrowDown fontSize={20} />
                     :
-                    <MdKeyboardArrowRight fontSize={25}  />
+                    <MdKeyboardArrowRight fontSize={25} />
                   }
                   <BsFolderFill color="#E99287" className="folder" />
                   <p >
@@ -252,9 +258,9 @@ const About = () => {
                 )}
                 <li onClick={toggleInterests}>
                   {showInterests ?
-                    <IoIosArrowDown  fontSize={20}   />
+                    <IoIosArrowDown fontSize={20} />
                     :
-                    <MdKeyboardArrowRight fontSize={25}  />
+                    <MdKeyboardArrowRight fontSize={25} />
                   }
                   <BsFolderFill color="#43D9AD" className="folder" />
                   <p>
@@ -267,17 +273,17 @@ const About = () => {
                   </div>
                 )}
                 <li onClick={toggleEducation}>
-                {showEducation ?
-                    <IoIosArrowDown  fontSize={20}   />
+                  {showEducation ?
+                    <IoIosArrowDown fontSize={20} />
                     :
-                    <MdKeyboardArrowRight fontSize={25}  />
+                    <MdKeyboardArrowRight fontSize={25} />
                   }
                   <BsFolderFill color="#3A49A4" className="folder" />
                   <p>
                     Formação
                   </p>
                 </li>
-                
+
                 {showEducation && (
                   <div className="bio-content">
                     <p className='folders-info-content'><RiMarkdownFill color="#607B96" fontSize={18} /><a href={Certificado} target='__blank'>Digital House</a></p>
