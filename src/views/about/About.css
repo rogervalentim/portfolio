@@ -38,7 +38,7 @@
 .folders-info {
   list-style: none;
   border-bottom: 1px solid #1E2D3D;
-  height: 170px;
+  height: 300px;
   padding-top: 22px;
 }
 
@@ -61,8 +61,22 @@
 .folders-info-content {
   display: flex;
   justify-content: center;
+  padding-top: 5px;
+  padding-left: 10%;
+  width: 95%;
   color: #dedede;
-  font-size: 16px;
+
+}
+
+.folders-info-content a {
+  padding-left: 10px;
+  color: #dedede;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.folders-info-content a:hover {
+  color:#607B96;
 }
 
 .markdown {

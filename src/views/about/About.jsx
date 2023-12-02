@@ -19,6 +19,8 @@ import { IoMdArrowDropright } from "react-icons/io"
 import CodeSnippet2 from "../../assets/codes/code-snippet-2.png"
 
 import Perfil from "../../assets/perfil.jpg"
+
+import Certificado from "../../assets/certificado-dh.jpg"
 import { useMediaQuery } from 'react-responsive'
 
 import SnippetMobile from "../../assets/snippet-mobile.png"
@@ -77,41 +79,57 @@ const About = () => {
               </div>
 
               {showInfo && (
-                <ul className="folders-info">
-                  <li>
-                    <MdKeyboardArrowRight fontSize={16} />
-                    <BsFolderFill color="#E99287" className="folder" />
-                    <p>
-                      Bio
-                    </p>
-                  </li>
-                  <li>
-                    <MdKeyboardArrowRight fontSize={16} />
-                    <BsFolderFill color="#43D9AD" className="folder" />
-                    <p>
-                      Interesses
-                    </p>
-                  </li>
-                  <li>
-                    <IoIosArrowDown fontSize={16} />
-                    <BsFolderFill color="#3A49A4" className="folder" />
-                    <p>
-                      Educação
-                    </p>
-                  </li>
-                  <li className="markdown">
-                    <RiMarkdownFill color="#607B96" />
-                    <p>
-                      Escola
-                    </p>
-                  </li>
-                  <li className="markdown">
-                    <RiMarkdownFill color="#607B96" />
-                    <p>
-                      Faculdade
-                    </p>
-                  </li>
-                </ul>
+                     <ul className="folders-info">
+                     <li onClick={toggleBio}>
+                       {bioContent ?
+                         <IoIosArrowDown  fontSize={20}   />
+                         :
+                         <MdKeyboardArrowRight fontSize={25}  />
+                       }
+                       <BsFolderFill color="#E99287" className="folder" />
+                       <p >
+                         Bio
+                       </p>
+                     </li>
+                     {bioContent && (
+                       <div className="bio-content">
+                         <p className='folders-info-content'>Tenho 23 anos,moro em Guarulhos-sp</p>
+                       </div>
+                     )}
+                     <li onClick={toggleInterests}>
+                       {showInterests ?
+                         <IoIosArrowDown  fontSize={20}   />
+                         :
+                         <MdKeyboardArrowRight fontSize={25}  />
+                       }
+                       <BsFolderFill color="#43D9AD" className="folder" />
+                       <p>
+                         Interesses
+                       </p>
+                     </li>
+                     {showInterests && (
+                       <div className="bio-content">
+                         <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas e virar especialista em desenvolvimento front-end.</p>
+                       </div>
+                     )}
+                     <li onClick={toggleEducation}>
+                     {showEducation ?
+                         <IoIosArrowDown  fontSize={20}   />
+                         :
+                         <MdKeyboardArrowRight fontSize={25}  />
+                       }
+                       <BsFolderFill color="#3A49A4" className="folder" />
+                       <p>
+                         Formação
+                       </p>
+                     </li>
+                     
+                     {showEducation && (
+                       <div className="bio-content">
+                         <p className='folders-info-content'><RiMarkdownFill color="#607B96" fontSize={18} /><a href={Certificado} target='__blank'>Digital House</a></p>
+                       </div>
+                     )}
+                   </ul>
               )}
 
               <div className="box-info">
@@ -229,7 +247,7 @@ const About = () => {
                 </li>
                 {bioContent && (
                   <div className="bio-content">
-                    <p className='folders-info-content'>Sou front end</p>
+                    <p className='folders-info-content'>Tenho 23 anos,moro em Guarulhos-sp</p>
                   </div>
                 )}
                 <li onClick={toggleInterests}>
@@ -245,7 +263,7 @@ const About = () => {
                 </li>
                 {showInterests && (
                   <div className="bio-content">
-                    <p className='folders-info-content'>Sou front end</p>
+                    <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas e virar especialista em desenvolvimento front-end.</p>
                   </div>
                 )}
                 <li onClick={toggleEducation}>
@@ -256,12 +274,13 @@ const About = () => {
                   }
                   <BsFolderFill color="#3A49A4" className="folder" />
                   <p>
-                    Educação
+                    Formação
                   </p>
                 </li>
+                
                 {showEducation && (
                   <div className="bio-content">
-                    <p className='folders-info-content'>Sou front end</p>
+                    <p className='folders-info-content'><RiMarkdownFill color="#607B96" fontSize={18} /><a href={Certificado} target='__blank'>Digital House</a></p>
                   </div>
                 )}
               </ul>
