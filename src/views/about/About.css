@@ -328,3 +328,18 @@
 .about-icons-mobile {
   list-style: none;
 }
+
+/* animation */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate-icon {
+  animation: rotate 1s linear infinite; /* Ajuste a duração e outras propriedades conforme necessário */
+}

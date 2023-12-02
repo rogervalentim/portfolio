@@ -56,6 +56,7 @@ const About = () => {
     setShowIcons(!showIcons)
     setShowInfo(false)
     setShowContacts(false)
+
   }
 
   const toggleContacts = () => {
@@ -144,13 +145,13 @@ const About = () => {
               {showIcons && (
                 <ul className="about-icons-mobile">
                   <li>
-                    <ChevronRightSquare color="#607B96" fontSize={25} />
+                    <ChevronRightSquare className="rotate-icon" color="#607B96" fontSize={25} />
                   </li>
                   <li>
-                    <PiSoccerBallFill color="#607B96" fontSize={25} />
+                    <PiSoccerBallFill className="rotate-icon" color="#607B96" fontSize={25} />
                   </li>
                   <li>
-                    <IoLogoGameControllerA color="#607B96" fontSize={25} />
+                    <IoLogoGameControllerA className="rotate-icon" color="#607B96" fontSize={25} />
                   </li>
                 </ul>
               )}
@@ -224,13 +225,13 @@ const About = () => {
           <section className="about-section">
             <ul className="about-icons">
               <li>
-                <ChevronRightSquare color="#607B96" fontSize={25} />
+                <ChevronRightSquare className="rotate-icon" color="#607B96" fontSize={25} />
               </li>
               <li>
-                <PiSoccerBallFill color="#607B96" fontSize={25} />
+                <PiSoccerBallFill className="rotate-icon" color="#607B96" fontSize={25} />
               </li>
               <li>
-                <IoLogoGameControllerA color="#607B96" fontSize={25} />
+                <IoLogoGameControllerA className="rotate-icon" color="#607B96" fontSize={25} />
               </li>
             </ul>
 
@@ -269,7 +270,7 @@ const About = () => {
                 </li>
                 {showInterests && (
                   <div className="bio-content">
-                    <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas e virar especialista em desenvolvimento front-end.</p>
+                    <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas e virar especialista em <br></br> desenvolvimento web.</p>
                   </div>
                 )}
                 <li onClick={toggleEducation}>
