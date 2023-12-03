@@ -1,18 +1,14 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import "./About.css"
 
 import { BiSolidDownArrow } from "react-icons/bi"
-import { BsFolderFill } from "react-icons/bs"
 import { ChevronRightSquare } from "lucide-react"
 import { PiSoccerBallFill } from "react-icons/pi"
 import { IoLogoGameControllerA } from "react-icons/io"
-import { MdKeyboardArrowRight } from "react-icons/md"
-import { IoIosArrowDown } from "react-icons/io"
-import { RiMarkdownFill } from "react-icons/ri"
 import { MdEmail } from "react-icons/md"
 import { BsFillTelephoneFill } from "react-icons/bs"
-import { AiOutlineClose, AiFillStar } from "react-icons/ai"
+import { AiOutlineClose } from "react-icons/ai"
 import { FaComments } from "react-icons/fa"
 import { IoMdArrowDropright, IoMdArrowDropdown } from "react-icons/io"
 
@@ -20,36 +16,23 @@ import CodeSnippet2 from "../../assets/codes/code-snippet-2.png"
 
 import Perfil from "../../assets/perfil.jpg"
 
-import Certificado from "../../assets/certificado-dh.jpg"
 import { useMediaQuery } from 'react-responsive'
 
 import SnippetMobile from "../../assets/snippet-mobile.png"
+
+import PersonalInfo from '../../components/PersonalInfo'
+import TextAboutMe from '../../components/TextAboutMe'
+import ContactsInfo from '../../components/ContactsInfo'
 
 const About = () => {
   const [showInfo, setShowInfo] = useState(false)
   const [showIcons, setShowIcons] = useState(false)
   const [showContacts, setShowContacts] = useState(false)
-  const [bioContent, setBioContent] = useState(false);
-  const [showInterests, setShowInterests] = useState(false);
-  const [showEducation, setShowEducation] = useState(false)
 
   const toggleInfo = () => {
     setShowInfo(!showInfo)
     setShowIcons(false)
     setShowContacts(false)
-  }
-
-  const toggleBio = () => {
-    setBioContent(!bioContent)
-  }
-
-
-  const toggleInterests = () => {
-    setShowInterests(!showInterests)
-  }
-
-  const toggleEducation = () => {
-    setShowEducation(!showEducation)
   }
 
   const toggleIcons = () => {
@@ -82,57 +65,7 @@ const About = () => {
               </div>
 
               {showInfo && (
-                <ul className="folders-info">
-                  <li onClick={toggleBio}>
-                    {bioContent ?
-                      <IoIosArrowDown fontSize={20} />
-                      :
-                      <MdKeyboardArrowRight fontSize={25} />
-                    }
-                    <BsFolderFill color="#E99287" className="folder" />
-                    <p >
-                      Bio
-                    </p>
-                  </li>
-                  {bioContent && (
-                    <div className="bio-content">
-                      <p className='folders-info-content'>Tenho 23 anos,moro em Guarulhos-sp</p>
-                    </div>
-                  )}
-                  <li onClick={toggleInterests}>
-                    {showInterests ?
-                      <IoIosArrowDown fontSize={20} />
-                      :
-                      <MdKeyboardArrowRight fontSize={25} />
-                    }
-                    <BsFolderFill color="#43D9AD" className="folder" />
-                    <p>
-                      Interesses
-                    </p>
-                  </li>
-                  {showInterests && (
-                    <div className="bio-content">
-                      <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas e virar especialista em desenvolvimento front-end.</p>
-                    </div>
-                  )}
-                  <li onClick={toggleEducation}>
-                    {showEducation ?
-                      <IoIosArrowDown fontSize={20} />
-                      :
-                      <MdKeyboardArrowRight fontSize={25} />
-                    }
-                    <BsFolderFill color="#3A49A4" className="folder" />
-                    <p>
-                      Formação
-                    </p>
-                  </li>
-
-                  {showEducation && (
-                    <div className="bio-content">
-                      <p className='folders-info-content'><RiMarkdownFill color="#607B96" fontSize={18} /><a href={Certificado} target='__blank'>Digital House</a></p>
-                    </div>
-                  )}
-                </ul>
+                <PersonalInfo />
               )}
 
               <div className="box-info">
@@ -174,7 +107,7 @@ const About = () => {
                   <li>
                     <BsFillTelephoneFill fontSize={12} color="#607B96" />
                     <p>
-                      (11)97050-6367
+                      {"(11)26567588"}
                     </p>
                   </li>
                 </ul>
@@ -240,75 +173,10 @@ const About = () => {
                 <BiSolidDownArrow fontSize={10} color="#fff" />
                 <p>Informações-pessoais</p>
               </div>
-              <ul className="folders-info">
-                <li onClick={toggleBio}>
-                  {bioContent ?
-                    <IoIosArrowDown fontSize={20} />
-                    :
-                    <MdKeyboardArrowRight fontSize={25} />
-                  }
-                  <BsFolderFill color="#E99287" className="folder" />
-                  <p >
-                    Bio
-                  </p>
-                </li>
-                {bioContent && (
-                  <div className="bio-content">
-                    <p className='folders-info-content'>Tenho 23 anos,moro em Guarulhos-sp</p>
-                  </div>
-                )}
-                <li onClick={toggleInterests}>
-                  {showInterests ?
-                    <IoIosArrowDown fontSize={20} />
-                    :
-                    <MdKeyboardArrowRight fontSize={25} />
-                  }
-                  <BsFolderFill color="#43D9AD" className="folder" />
-                  <p>
-                    Interesses
-                  </p>
-                </li>
-                {showInterests && (
-                  <div className="bio-content">
-                    <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas e virar especialista em <br></br> desenvolvimento web.</p>
-                  </div>
-                )}
-                <li onClick={toggleEducation}>
-                  {showEducation ?
-                    <IoIosArrowDown fontSize={20} />
-                    :
-                    <MdKeyboardArrowRight fontSize={25} />
-                  }
-                  <BsFolderFill color="#3A49A4" className="folder" />
-                  <p>
-                    Formação
-                  </p>
-                </li>
 
-                {showEducation && (
-                  <div className="bio-content">
-                    <p className='folders-info-content'><RiMarkdownFill color="#607B96" fontSize={18} /><a href={Certificado} target='__blank'>Digital House</a></p>
-                  </div>
-                )}
-              </ul>
-              <div className="info">
-                <BiSolidDownArrow fontSize={10} color="#fff" />
-                <p>Contatos</p>
-              </div>
-              <ul className="contacts">
-                <li>
-                  <MdEmail color="#607B96" />
-                  <p>
-                    valentim.roger33@gmail.com
-                  </p>
-                </li>
-                <li>
-                  <BsFillTelephoneFill color="#607B96" />
-                  <p>
-                    (11)97050-6367
-                  </p>
-                </li>
-              </ul>
+              <PersonalInfo />
+              
+               <ContactsInfo />
             </div>
 
             <div>
@@ -319,31 +187,7 @@ const About = () => {
                 <AiOutlineClose color="##607B96" />
               </div>
 
-              <div className="list-about-me">
-                <ol>
-                  <li><p>{`/**`} Sobre Mim</p></li>
-                  <li><p>{`*`}Sou um apaixonado desenvolvedor frontend com</p></li>
-                  <li><p>{`*`}uma habilidade especial para transformar </p></li>
-                  <li><p>{`*`}conceitos criativos em interfaces digitais</p></li>
-                  <li><p>{`*`}interativas e intuitivas. Minha jornada no</p></li>
-                  <li><p>{`*`}mundo do  desenvolvimento web  começou com a</p></li>
-                  <li><p>{`*`}curiosidade de entender como as páginas da web</p></li>
-                  <li><p>{`*`}ganham vida, e desde então,  tenho dedicado</p></li>
-                  <li><p>{`*`}minha carreira a aprimorara aprimorar minhas</p></li>
-                  <li><p>{`*`}habilidades e aprimorar minhas técnicas no</p></li>
-                  <li><p>{`*`}Minha paixão pelo desenvolvimento frontend vai</p></li>
-                  <li><p>{`*`}além do código; é sobre criar experiências </p></li>
-                  <li><p>{`*`}digitais significativas que deixam uma marca</p></li>
-                  <li><p>{`*`}duradoura nos usuários. Estou sempre animado</p></li>
-                  <li><p>{`*`}para enfrentar novos desafios e aprender </p></li>
-                  <li><p>{`*`}novas tecnologias para aprimorar minhas</p></li>
-                  <li><p>{`*`}habilidades.Se você está procurando um</p></li>
-                  <li><p>{`*`}desenvolvedor frontend dedicado, inovador e</p></li>
-                  <li><p>{`*`}orientado  para resultados, estou pronto para</p></li>
-                  <li><p>{`*`}colaborar e levar seus projetos ao próximo</p></li>
-                  <li><p>{`*`}nível. Vamos criar algo incrível juntos!</p></li>
-                </ol>
-              </div>
+                <TextAboutMe />
             </div>
 
             <div className="codes">
@@ -363,13 +207,10 @@ const About = () => {
                 </div>
                 <ul>
                   <li>
+                  <a  href="https://github.com/rogervalentim/portfolio" target="__blank">
                     <FaComments />
                     details
-                  </li>
-                  <li style={{ marginLeft: "18px" }}>
-                    <AiFillStar />
-                    0
-                    estrelas
+                  </a>
                   </li>
                 </ul>
               </div>

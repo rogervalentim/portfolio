@@ -38,7 +38,8 @@
 .folders-info {
   list-style: none;
   border-bottom: 1px solid #1E2D3D;
-  height: 300px;
+  max-height: 350px;
+  min-height: 200px;
   padding-top: 22px;
 }
 
@@ -47,6 +48,7 @@
   color: #607B96;
   display: flex;
   align-items: center;
+  margin-top: 5px;
   font-size: 16px;
 }
 
@@ -59,11 +61,10 @@
 }
 
 .folders-info-content {
+  padding-left: 20px;
   display: flex;
-  justify-content: center;
-  padding-top: 5px;
-  padding-left: 10%;
-  width: 95%;
+  align-items: center ;
+  margin-top: 5px;
   color: #dedede;
 
 }
@@ -84,9 +85,9 @@
 }
 
 .contacts {
+  height: 200px;
   padding-top: 22px;
   list-style: none;
-  height: 565px;
 }
 
 .contacts li {
@@ -99,7 +100,7 @@
 }
 
 .contacts p {
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .info-close {
@@ -207,7 +208,12 @@
   color: #607B96;
 }
 
-.codes-details li:hover {
+.codes-details a {
+  text-decoration: none;
+  color: #607B96;
+}
+
+.codes-details a:hover {
   color: #fff;
 }
 
@@ -327,6 +333,7 @@
 
 .about-icons-mobile {
   list-style: none;
+  margin-top: 20px;
 }
 
 /* animation */
@@ -342,4 +349,8 @@
 
 .rotate-icon {
   animation: rotate 1s linear infinite; /* Ajuste a duração e outras propriedades conforme necessário */
+}
+
+.active-folder {
+  color: #fff;
 }
