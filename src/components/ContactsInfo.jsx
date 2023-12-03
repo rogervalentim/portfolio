@@ -2,7 +2,6 @@ import { BiSolidDownArrow } from "react-icons/bi"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 
-import "./ContactsInfo.css"
 
 const ContactsInfo = () => {
     return (
