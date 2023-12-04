@@ -60,7 +60,7 @@ const PersonalInfo = () => {
                 </li>
                 {showInterests && (
                     <div className="bio-content">
-                        <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas e virar especialista em <br></br> desenvolvimento web.</p>
+                        <p className='folders-info-content'>Me formar em análise e desenvolvimento de sistemas<br></br> e virar especialista em <br></br> desenvolvimento web.</p>
                     </div>
                 )}
                 <li onClick={toggleEducation}>

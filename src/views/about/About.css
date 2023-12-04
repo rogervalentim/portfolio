@@ -38,7 +38,7 @@
 .folders-info {
   list-style: none;
   border-bottom: 1px solid #1E2D3D;
-  max-height: 350px;
+  max-height: 400px;
   min-height: 200px;
   padding-top: 22px;
 }
@@ -50,6 +50,7 @@
   align-items: center;
   margin-top: 5px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 .folder {
@@ -61,23 +62,21 @@
 }
 
 .folders-info-content {
-  padding-left: 20px;
   display: flex;
   align-items: center ;
   margin-top: 5px;
-  color: #dedede;
-
+  color: #607B96;
 }
 
 .folders-info-content a {
   padding-left: 10px;
-  color: #dedede;
+  color: #607B96;
   text-decoration: none;
   cursor: pointer;
 }
 
 .folders-info-content a:hover {
-  color:#607B96;
+  color:#fff;
 }
 
 .markdown {
@@ -269,6 +268,7 @@
   margin-left: 10px;
 }
 
+
 .text-about-me {
   color: #607B96;
   font-size: 16px;
@@ -334,6 +334,11 @@
 .about-icons-mobile {
   list-style: none;
   margin-top: 20px;
+}
+
+.link-details-mobile {
+  text-decoration: none;
+  color: #607B96;
 }
 
 /* animation */

@@ -1,0 +1,21 @@
+.card-technologie {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1E2D3D;
+    border-radius: 6px;
+  }
+
+  .card-technologie img {
+    width: 40px;
+    margin-top: 5px;
+  }
+  
+  .card-technologie p {
+    color: #dedede;
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  

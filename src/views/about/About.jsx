@@ -136,12 +136,13 @@ const About = () => {
                   <img src={Perfil} alt="foto de perfil" />
                   <p className="username">@rogervalentim
                     <br></br>
-                    <span>3 meses atrás</span>
                   </p>
                 </div>
                 <div className="details">
                   <FaComments />
-                  <p>detalhes</p>
+                  <a className='link-details-mobile' href="https://github.com/rogervalentim/portfolio" target="__blank">
+                  detalhes
+                  </a>
                 </div>
               </div>
 
@@ -202,14 +203,13 @@ const About = () => {
                   <span className="name">
                     @rogervalentim
                     <br></br>
-                    <code className="date">Criado a 5 meses atrás</code>
                   </span>
                 </div>
                 <ul>
                   <li>
                   <a  href="https://github.com/rogervalentim/portfolio" target="__blank">
                     <FaComments />
-                    details
+                    detalhes
                   </a>
                   </li>
                 </ul>
