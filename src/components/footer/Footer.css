@@ -20,11 +20,6 @@ footer p {
   align-items: center;
 }
 
-footer p:hover {
-  color: #fff;
-  font-size: 16px;
-}
-
 footer ul {
   display: flex;
   list-style: none;
@@ -52,6 +47,10 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.linkedin-footer  a:hover , .whats-footer a:hover {
+  color: #fff;
 }
 
 .footer-github {

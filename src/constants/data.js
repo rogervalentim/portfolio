@@ -1,6 +1,8 @@
 import ProjectImage1 from "../assets/projects/projeto-1.png"
 import ProjectImage2 from "../assets/projects/projeto-2.png"
 import ProjectImage3 from "../assets/projects/projeto-3.png"
+import ProjectImage4 from "../assets/projects/projeto-4.png"
+import ProjectImage5 from "../assets/projects/projeto-5.png"
 
 export const projects = [
   {
@@ -20,9 +22,23 @@ export const projects = [
   {
     "project": "Projeto 3",
     "title": "// Carhub",
-    "text": "O carhub é um site, com a idéia de mostrar um catálogo de carros de aluguel.",
+    "text": "O Carhub é uma interface intuitiva, os visitantes podem explorar uma ampla opções de carros.",
     "link": "https://cars-lime-iota.vercel.app/",
     "image": ProjectImage3,
+  },
+  {
+    "project": "Projeto 4",
+    "title": "// Restaurant",
+    "text": "O projeto Restaurant é uma visão abrangente e atrativa de estabelecimentos gastronômicos.",
+    "link": "https://restaurant-a83azib2d-rogervalentim.vercel.app/",
+    "image": ProjectImage4,
+  },
+  {
+    "project": "Projeto 5",
+    "title": "// Wlass saas -⭐",
+    "text": "Esse projeto foi concebido como uma solução personalizada para atender às necessidades específicas de uma empresa.",
+    "link": "https://core-ui-bay.vercel.app/#/dashboard",
+    "image": ProjectImage5,
   },
 ]
 

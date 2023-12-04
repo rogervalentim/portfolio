@@ -55,8 +55,6 @@ const Projects = () => {
             )}
           </div>
 
-
-
           <div>
             <p className="category-project">
               {`//`} projetos <code>{`//`}  todos</code>
@@ -129,11 +127,10 @@ const Projects = () => {
                     />
                   ))}
                 </div>
+
+               <div className="space" />
               </div>
             </div>
-            <div className="retangule" />
-
-
 
           </section>
         </>

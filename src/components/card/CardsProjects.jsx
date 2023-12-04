@@ -23,6 +23,8 @@ const CardsProjects = ({ project, title, image, text, link}) => {
         ver projeto
       </button>
       </a>
+
+      <div className='space-card' />
       </div>
       </div>
     </div>

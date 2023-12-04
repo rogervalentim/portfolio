@@ -5,7 +5,6 @@
   display: flex;
 }
 
-
 .projects-container {
   display: flex;
   align-items: center;
@@ -34,13 +33,13 @@
   width: 335px;
 }
 
-.projects-container p, .tecnologies-container p {
+.projects-container p,
+.tecnologies-container p {
   margin-left: 10px;
 }
 
 .projects-technologies li {
   display: flex;
-  /* justify-content: center; */
   padding-top: 18px;
   padding-left: 133px;
 }
@@ -53,9 +52,13 @@
 
 .projects-content {
   width: 1000px;
+  max-width: 100%;
   border-top: 1px solid #1E2D3D;
   border-right: 1px solid #1E2D3D;
-  height: 95vh;
+  height: 94vh;
+  max-height: 100vh;
+  overflow-y: auto;
+  overflow-x: none;
 }
 
 .project-window {
@@ -66,23 +69,16 @@
   color: #607B96;
   font-size: 16px;
   border-right: 1px solid #1E2D3D;
-  /* border: 1px solid #1E2D3D; */
   height: 40px;
   width: 264px;
-}
-
-.retangule {
-  width: 19px;
-  height: 7px;
-  background-color: #607B96;
-  margin-top: 40px;
 }
 
 .grid-cards-projects {
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: center;
-  padding-top: 50px;
+  margin-top: 20px;
+  gap: 5px;
 }
 
 .grid-img-technologies {
@@ -93,10 +89,13 @@
   margin-top: 20px;
 }
 
+.space {
+  height: 200px;
+}
 
 @media screen and (max-width: 768px) {
   .grid-cards-projects {
-  grid-template-columns: auto;
+    grid-template-columns: auto;
   }
 
   .title-project-mobile {
@@ -114,5 +113,11 @@
 
   .category-project code {
     color: #607B96;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-cards-projects {
+    grid-template-columns: auto;
   }
 }
