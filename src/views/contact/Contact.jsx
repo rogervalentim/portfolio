@@ -10,7 +10,7 @@ import { FiExternalLink } from "react-icons/fi"
 import { AiOutlineClose, AiOutlineDownload  } from "react-icons/ai"
 import { IoMdArrowDropright, IoMdArrowDropdown } from "react-icons/io"
 
-import Curriculum from "../../assets/CV-ROGER-VALENTIM-DA-SILVA.pdf"
+import Curriculum from "../../assets/Roger-valentim-front-end.pdf"
 
 import { useMediaQuery } from 'react-responsive'
 import ContactsInfo from '../../components/ContactsInfo';
@@ -166,24 +166,6 @@ const Contact = () => {
         <section className="contact-section">
       <div className="contact-container-info">
         <ContactsInfo />
-      {/* <div className="info-contact">
-        <BiSolidDownArrow fontSize={10} color="#fff"  />
-        <p>Contatos</p>
-        </div>
-        <ul className="contacts-ul">
-          <li>
-          <MdEmail fontSize={18} color="#607B96"  />
-          <p>
-          valentim.roger33@gmail.com
-          </p>
-          </li>
-          <li>
-          <BsFillTelephoneFill fontSize={18} color="#607B96"  />
-          <p>
-          (11)97050-6367
-          </p>
-          </li>
-        </ul> */}
 
         <div className="info-curriculum">
         <BiSolidDownArrow fontSize={10} color="#fff"  />
