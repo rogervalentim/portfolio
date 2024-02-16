@@ -3,6 +3,7 @@ import ProjectImage2 from "../assets/projects/projeto-2.png"
 import ProjectImage3 from "../assets/projects/projeto-3.png"
 import ProjectImage4 from "../assets/projects/projeto-4.png"
 import ProjectImage5 from "../assets/projects/projeto-5.png"
+import ProjectImage6 from "../assets/projects/projeto-6.png"
 
 export const projects = [
   {
@@ -40,6 +41,13 @@ export const projects = [
     "link": "https://core-ui-bay.vercel.app/#/dashboard",
     "image": ProjectImage5,
   },
+  {
+    "project": "Projeto 6",
+    "title": "// Nlw expert notes",
+    "text": "Eu fiz esse projeto durante o evento da rocketseat, onde é possível adicionar notas , ou por gravação ou por texto.",
+    "link": "https://zesty-pavlova-ab0d95.netlify.app/",
+    "image": ProjectImage6,
+  },
 ]
 
 export const technologies = [
@@ -61,7 +69,7 @@ export const technologies = [
   },
   {
     "name": "Tailwind",
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
     "name": "Typescript",
