@@ -2,10 +2,9 @@ import { useState } from 'react'
 import { BsFolderFill } from 'react-icons/bs';
 import { IoIosArrowDown } from 'react-icons/io';
 import { MdKeyboardArrowRight } from 'react-icons/md';
-import { RiMarkdownFill } from 'react-icons/ri';
 
-import Certificado from "../assets/certificado-dh.jpg"
-import CertificadoFudamentosProgramacao from "../assets/fundamentos-programação.pdf"
+import { certificates } from '../constants/data';
+import { RiMarkdownFill } from 'react-icons/ri';
 
 
 const PersonalInfo = () => {
@@ -76,10 +75,16 @@ const PersonalInfo = () => {
                 </li>
 
                 {showEducation && (
-                    <div className="bio-content">
-                        <p className='folders-info-content'><RiMarkdownFill color="#607B96" fontSize={18} /><a href={Certificado} target='__blank'>Full stack</a></p>
-                        <p className='folders-info-content'><RiMarkdownFill color="#607B96" fontSize={18} /><a href={CertificadoFudamentosProgramacao} target='__blank'>Fudamentos Programação</a></p>
+                   <>
+                   {certificates.map((item) => (
+                    <div key={item.name}>
+                        <p className='folders-info-content'>
+                        <RiMarkdownFill color="#607B96" fontSize={18} />
+                            <a href={item.image} target='__blank'>{item.name}</a>
+                            </p>
                     </div>
+                   ))}
+                   </>      
                 )}
             </ul>
         </>

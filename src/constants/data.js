@@ -5,6 +5,11 @@ import ProjectImage4 from "../assets/projects/projeto-4.png"
 import ProjectImage5 from "../assets/projects/projeto-5.png"
 import ProjectImage6 from "../assets/projects/projeto-6.png"
 
+import Certificate1 from "../assets/certificates/fundamentos-programação.pdf"
+import Certificate2 from "../assets/certificates/certificado-dh.jpg"
+import Certificate3 from "../assets/certificates/certificate-react.pdf"
+import Certificate4 from "../assets/certificates/certificate-java.pdf"
+
 export const projects = [
   {
     "project": "Projeto 1",
@@ -86,5 +91,24 @@ export const technologies = [
   {
     "name": "Github",
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
+]
+
+export const certificates = [
+  {
+    "name": "Fundamentos da programação",
+    "image": Certificate1,
+  },
+  {
+    "name": "Certificado Digital House",
+    "image": Certificate2,
+  },
+  {
+    "name": "Nlw react",
+    "image": Certificate3,
+  },
+  {
+    "name": "Nlw java",
+    "image": Certificate4,
   },
 ]
