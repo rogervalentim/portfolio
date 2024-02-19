@@ -111,4 +111,8 @@ export const certificates = [
     "name": "Nlw java",
     "image": Certificate4,
   },
+  {
+    "name": "Javascript",
+    "image": "https://www.freecodecamp.org/certification/fcc9ce5c325-44c1-4089-ae4f-ad98b95466aa/javascript-algorithms-and-data-structures-v8"
+  }
 ]

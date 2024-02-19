@@ -6,6 +6,8 @@ import { MdKeyboardArrowRight } from 'react-icons/md';
 import { certificates } from '../constants/data';
 import { RiMarkdownFill } from 'react-icons/ri';
 
+import "./PersonalInfo.css";
+
 
 const PersonalInfo = () => {
 
@@ -79,14 +81,16 @@ const PersonalInfo = () => {
                    {certificates.map((item) => (
                     <div key={item.name}>
                         <p className='folders-info-content'>
-                        <RiMarkdownFill color="#607B96" fontSize={18} />
+                        <RiMarkdownFill color="#607B96" fontSize={18} /> 
                             <a href={item.image} target='__blank'>{item.name}</a>
                             </p>
                     </div>
                    ))}
                    </>      
                 )}
+              <div style={{height: "20px"}} />
             </ul>
+
         </>
     )
 }

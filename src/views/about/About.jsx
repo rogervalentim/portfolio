@@ -176,7 +176,7 @@ const About = () => {
               </div>
 
               <PersonalInfo />
-              
+                            
                <ContactsInfo />
             </div>
 
