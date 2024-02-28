@@ -13,7 +13,7 @@ O site é composto por quatro seções:
 - **Home:** Nele temos uma breve apresentação;
 - **Quem sou:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
 - **Projetos:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos projetos;
-- **Contato: ** Onde tem um formulário para enviar o feedback do sobre o portfólio e todos os links de contato como linkedin e whatsapp
+- **Contato:** Onde tem um formulário para enviar o feedback do sobre o portfólio e todos os links de contato como linkedin e whatsapp
 
 ---
 
